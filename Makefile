@@ -23,7 +23,7 @@ USES=		gl gmake qmake qt:6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	myb-project
-GH_TAGNAME=	0552953
+GH_TAGNAME=	56a779e
 PLIST_FILES=	bin/mybee-qt
 
 USE_GL=		gl
@@ -35,9 +35,9 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/mybee-qt \
 		${STAGEDIR}${PREFIX}/bin
 
-post-extract:
-	${RM} ${WRKSRC}/libssh/libssh.pro \
-		${WRKSRC}/vnc/vnc.pro \
-		${WRKSRC}/freerdp2/freerdp2.pro
+#post-extract:
+#	${RM} ${WRKSRC}/libssh/libssh.pro \
+#		${WRKSRC}/vnc/vnc.pro \
+#		${WRKSRC}/freerdp2/freerdp2.pro
 
 .include <bsd.port.mk>
