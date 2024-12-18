@@ -1,8 +1,8 @@
 PORTNAME=	mybee-qt
-PORTVERSION=	0.2.0
+PORTVERSION=	24.12.1
 CATEGORIES=	emulators
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	fbsd-ports@convectix.com
 COMMENT=	MyBee and CBSD API client
 WWW=		https://github.com/myb-project
 
@@ -23,7 +23,7 @@ USES=		gl gmake qmake qt:6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	myb-project
-GH_TAGNAME=	546bb81
+GH_TAGNAME=	0552953
 PLIST_FILES=	bin/mybee-qt
 
 USE_GL=		gl
