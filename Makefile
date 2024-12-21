@@ -1,5 +1,5 @@
 PORTNAME=	mybee-qt
-PORTVERSION=	24.12.2
+PORTVERSION=	24.12.3
 CATEGORIES=	emulators
 
 MAINTAINER=	fbsd-ports@convectix.com
