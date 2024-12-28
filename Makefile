@@ -23,7 +23,7 @@ USES=		gl gmake qmake qt:6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	myb-project
-GH_TAGNAME=	a338462
+GH_TAGNAME=	b861911
 PLIST_FILES=	bin/mybee-qt
 
 USE_GL=		gl
