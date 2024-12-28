@@ -1,5 +1,5 @@
 PORTNAME=	mybee-qt
-PORTVERSION=	24.12.3
+PORTVERSION=	24.12.4
 CATEGORIES=	emulators
 
 MAINTAINER=	fbsd-ports@convectix.com
@@ -23,7 +23,7 @@ USES=		gl gmake qmake qt:6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	myb-project
-GH_TAGNAME=	053fd64
+GH_TAGNAME=	a338462
 PLIST_FILES=	bin/mybee-qt
 
 USE_GL=		gl
@@ -34,10 +34,5 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/src/mybee-qt \
 		${STAGEDIR}${PREFIX}/bin
-
-#post-extract:
-#	${RM} ${WRKSRC}/libssh/libssh.pro \
-#		${WRKSRC}/vnc/vnc.pro \
-#		${WRKSRC}/freerdp2/freerdp2.pro
 
 .include <bsd.port.mk>
