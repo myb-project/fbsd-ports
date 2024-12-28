@@ -30,6 +30,16 @@ USE_GL=		gl
 
 USE_QT=		5compat base multimedia tools:build
 
+OPTIONS_DEFINE=		TRACE_SYSTEMPROCESS
+OPTIONS_SUB=		yes
+TRACE_SYSTEMPROCESS_DESC=	Trace system process (debug)
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MTRACE_SYSTEMPROCESS}
+MAKE_ENV+=	TRACE_SYSTEMPROCESS=true
+.endif
+
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/src/mybee-qt \
