@@ -1,5 +1,5 @@
 PORTNAME=	mybee-qt
-PORTVERSION=	24.12.4
+PORTVERSION=	25.01.1
 CATEGORIES=	emulators
 
 MAINTAINER=	fbsd-ports@convectix.com
@@ -23,7 +23,7 @@ USES=		gl gmake qmake qt:6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	myb-project
-GH_TAGNAME=	b861911
+GH_TAGNAME=	da8e430
 PLIST_FILES=	bin/mybee-qt
 
 USE_GL=		gl
