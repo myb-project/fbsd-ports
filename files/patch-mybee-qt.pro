@@ -1,4 +1,4 @@
---- mybee-qt.pro.orig	2025-01-07 20:15:49 UTC
+--- mybee-qt.pro.orig	2025-01-23 11:34:32 UTC
 +++ mybee-qt.pro
 @@ -1,8 +1,8 @@ TEMPLATE = subdirs
  TEMPLATE = subdirs
