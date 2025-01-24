@@ -1,5 +1,5 @@
 PORTNAME=	mybee-qt
-PORTVERSION=	25.01.4
+DISTVERSION=	25.01.5
 CATEGORIES=	emulators
 
 MAINTAINER=	fbsd-ports@convectix.com
@@ -11,23 +11,20 @@ LICENSE=	MIT
 BUILD_DEPENDS=	curl:ftp/curl \
 		cmake:devel/cmake \
 		xfreerdp:net/freerdp
-
 LIB_DEPENDS=	libvncserver.so:net/libvncserver \
 		libfreerdp2.so:net/freerdp \
-		libwinpr2.so.2:net/freerdp \
+		libwinpr2.so:net/freerdp \
 		libssh.so:security/libssh
-
 RUN_DEPENDS=	xfreerdp:net/freerdp
 
 USES=		gl gmake qmake qt:6
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	myb-project
-GH_TAGNAME=	0f6a311
+GH_TAGNAME=	6955032
 PLIST_FILES=	bin/mybee-qt
 
 USE_GL=		gl
-
 USE_QT=		5compat base multimedia tools:build
 
 OPTIONS_DEFINE=		TRACE_SYSTEMPROCESS
